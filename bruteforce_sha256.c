@@ -1,5 +1,8 @@
 // Coded by Scratchy
-// Compilare in GCC con le opzioni: -lm -pthread -lssl -lcrypto -O2 -o brute
+/*
+Compilare con: gcc bruteforce_sha256.c -lm -pthread -lssl -lcrypto -O2 -o brute
+ed eseguire provando: ./brute 569428c3f4cf6ccde2ff97a7646733d1ee0fd77f1dfed45a16c79940f3dca862
+*/
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
