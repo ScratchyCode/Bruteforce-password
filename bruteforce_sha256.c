@@ -2,6 +2,7 @@
 /*
 Compilare con: gcc bruteforce_sha256.c -lm -pthread -lssl -lcrypto -O2 -o brute
 ed eseguire provando: ./brute 569428c3f4cf6ccde2ff97a7646733d1ee0fd77f1dfed45a16c79940f3dca862
+con 4 char
 */
 #define _GNU_SOURCE
 #include <stdio.h>
@@ -50,7 +51,7 @@ int main(int argc, char **argv){
     int tmp;
     
     // eseguire come root per avere questa impostazione
-	tmp = nice(-20); // lol
+    tmp = nice(-20); // lol
     
     int i, n, elementi=strlen(charset_global);
     int nbin = (int)(elementi/CORE);                // numero di elementi per bin
